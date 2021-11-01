@@ -1,5 +1,5 @@
-
-
+const generateHTML = () =>
+`
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -77,5 +77,6 @@
 <script src="index.js"></script>
 
 </body>
-  
+`;
 
+module.exports = generateHTML;
