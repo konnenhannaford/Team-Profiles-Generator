@@ -6,7 +6,7 @@ describe('Manager', () => {
     it("it should get the officenumber",()=>{
         const officeNumber = 69
         const manager = new Manager("Kanye",1,"kanye@gmail.com", officeNumber) 
-        expect(manager.getOfficeNumm()).toBe(officeNumber);
+        expect(manager.getOfficeNum()).toBe(officeNumber);
     })
 
     it("should get role ()",()=>{
