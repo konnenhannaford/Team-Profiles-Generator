@@ -1,16 +1,16 @@
-// const Intern = require('../lib/intern.js');
+const Intern = require('../lib/intern.js');
 
-// describe('Intern', () => {
-//     it("Accesses users School info",()=>{
-//         const school = "Kanyes Uni" 
-//         const testIntern = new Intern ("Kanye",1,"kanye@gmail.com", school) 
-//         expect(Intern.school).toBe(school);
-//     })
+describe('Intern', () => {
+    it("Accesses users School info",()=>{
+        const school = "Kanyes Uni" 
+        const intern = new Intern ("Kanye",1,"kanye@gmail.com", school) 
+        expect(intern.school).toBe(school);
+    })
 
-//     it("should get role ()",()=>{
-//         const role = "Intern"
-//         const testIntern = new Intern ("Kanye",1,role)
-//         expect(Intern.getRole()).toBe(role);
-//     })
+    it("should get role ()",()=>{
+        const role = "Intern"
+        const intern = new Intern ("Kanye",1,role)
+        expect(intern.getRole()).toBe(role);
+    })
 
-// })
+})

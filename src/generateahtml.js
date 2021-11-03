@@ -27,7 +27,7 @@ const generateHTML = () =>
   <div class="card-body">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: </li>
-      <li class="list-group-item">Email: </li>
+      <li class="list-group-item">Email: <a href="mailto:kany69@gmail.com">kany69@gmail.com</a></li>
       <li class="list-group-item">Github: </li>
     </ul>
   </div>
@@ -40,7 +40,7 @@ const generateHTML = () =>
   <div class="card-body">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: </li>
-      <li class="list-group-item">Email: </li>
+      <li class="list-group-item">Email: <a href="mailto:kany69@gmail.com">kany69@gmail.com</a></li>
       <li class="list-group-item">Github: </li>
     </ul>
   </div>
@@ -53,7 +53,7 @@ const generateHTML = () =>
   <div class="card-body">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: </li>
-      <li class="list-group-item">Email: </li>
+      <li class="list-group-item">Email: <a href="mailto:kany69@gmail.com">kany69@gmail.com</a></li>
       <li class="list-group-item">Github: </li>
     </ul>
   </div>
@@ -66,7 +66,7 @@ const generateHTML = () =>
       <div class="card-body">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: </li>
-          <li class="list-group-item">Email: </li>
+          <li class="list-group-item">Email: <a href="mailto:kany69@gmail.com">kany69@gmail.com</a></li>
           <li class="list-group-item">Github: </li>
         </ul>
       </div>
