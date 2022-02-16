@@ -1,16 +1,19 @@
 {
-  "name": "Team-Profiles-Generator",
+  "name": "team-profiles-generator",
   "version": "1.0.0",
   "description": "## Your Task",
   "main": "index.js",
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.0",
+    "inquirer-loop": "^0.3.0"
   },
   "devDependencies": {
     "jest": "^27.3.1"
   },
   "scripts": {
-    "test": "jest"
+    "start": "node index.js",
+    "test": "jest",
+    "test-watch": "jest --watch *.js"
   },
   "repository": {
     "type": "git",
