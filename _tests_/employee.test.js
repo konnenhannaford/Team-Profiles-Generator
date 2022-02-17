@@ -3,7 +3,7 @@ const Employee = require('../lib/employee.js');
 
 describe('Employee', () => {
 
-    it("Can make an object from the class emploee",()=>{
+    it("Can make an object from the class employee",()=>{
         const employee = new Employee("Kanye",1,"kanye@gmail.com") 
         expect(typeof(employee)).toBe("object");
     })
