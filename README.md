@@ -15,10 +15,7 @@ Github Repo
 https://github.com/konnenhannaford/Team-Profiles-Generator
 
 Demo Link
-.............................
-.............................
-.............................
-.............................v
+https://drive.google.com/file/d/1mKT_-wx86Zm7M0GsVZOyZ3ZKE0T1FmCU/view
 
 ### Table of Contents  
   
