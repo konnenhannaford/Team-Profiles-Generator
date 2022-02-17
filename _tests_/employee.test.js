@@ -10,7 +10,7 @@ describe('Employee', () => {
 
     it("should get name",()=>{
         const name = "Kanye"
-        const employee = new Employee("Kanye",1,name)
+        const employee = new Employee(name)
 
         expect(employee.getName()).toBe(name);
     })
@@ -18,14 +18,10 @@ describe('Employee', () => {
     it("should get id",()=>{
         const id = 1        
         const employee = new Employee("Kanye",1)
+        expect(typeof(employee.getId)).toEqual("number");
         expect(employee.getId()).toBe(id);
     })
 
-    // it("getRole() should return \"Employee",() => {
-    //     const testValue = "Employee";
-    //     const e = new Employee("Alice", 1, "test@test.com");
-    //     expect(e.getRole()).toBe(testValue);
-    // });
 
     it("should get email ()",()=>{
         const email = "kanye@gmail.com"

@@ -5,7 +5,7 @@ const fs = require('fs');
 // const path = require ('path');
 // // const generateMarkdown = require('./utils/generateMarkdown.js');
 // // const Employee = require('./lib/Employee')
-const generateHTML = require("../Team-Profiles-Generator/src/generateahtml");
+const generateHTML = require("./src/generateahtml.js");
 const Manager = require('./lib/manager.js')
 const Engineer = require('./lib/engineer.js')
 const Intern = require('./lib/intern.js')
@@ -171,30 +171,35 @@ async function ask(questions) {
   
   // starting inquirer
   async function init() {
+    let Managers=[];
     let ManagementResponse = await ask(ManagerQuestions);
-    const manager = new Manager(ManagementResponse);
+    console.log(ManagementResponse);
+    Managers.push(ManagementResponse);
     let next = await ask(Next);
     let team;
     let objectItem;
-    let engineers = [];
-    let interns = [];
+    let Engineers = [];
+    let Interns = [];
 
     // moves to the next set of question
     while (next.employee !== "Exit") {
       if (next.employee === "Engineer") {
         team = await ask(EngineerQuestions);
-        objectItem = new Engineer(team);
-        engineers.push(objectItem);
+        console.log("team:"+team);
+       // objectItem = new Engineer(team);
+        Engineers.push(team);
       } else {
         team = await ask(InternQuestions);
-        objectItem = new Intern(team);
-        interns.push(objectItem);
+        //objectItem = new Intern(team);
+        Interns.push(team);
       }
       next = await ask(Next);
     }
 
-    
-    let generatePage = await generateHTML(manager, engineers, interns);
+    console.log(Managers);
+    console.log(Engineers);
+    console.log(Interns);
+    let generatePage = await generateHTML(Managers, Engineers, Interns);
     writeToFile(generatePage);
   }
   

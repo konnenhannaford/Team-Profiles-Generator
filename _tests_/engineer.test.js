@@ -9,7 +9,7 @@ describe('Engineer', () => {
 
     it("should get role ()",()=>{
         const role = "Engineer"
-        const engineer = new Engineer ("Kanye",1,role)
+        const engineer = new Engineer ("Kanye",1,"kanye@gmail.com")
         expect(engineer.getRole()).toBe(role);
     })
 

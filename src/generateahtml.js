@@ -1,20 +1,22 @@
-async function generateHTML(manager, engineers, interns) {
+
+async function generateHTML(managers, engineers, interns) {
   let html = "";
+  const manager=managers[0];
   html += 
   `
-<div class="card" >
-  <div class="card-header">
-    <h3> ${manager.name} </h3>
-  </div>
-  <div class="card-body">
-    <ul class="list-group">
-      <li >Manager </li>
-      <li >ID: ${manager.id}</li>
-      <li >Email: <a href="mailto:${manager.email}">${manager.email}</a></li>    
-      <li >Office Number: ${manager.office}</li>
-    </ul>
-  </div>
-</div>`;
+    <div class="card" >
+      <div class="card-header">
+        <h3> ${manager.name} </h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li >Manager </li>
+          <li >ID: ${manager.id}</li>
+          <li >Email: <a href="mailto:${manager.email}">${manager.email}</a></li>    
+          <li >Office Number: ${manager.office}</li>
+        </ul>
+      </div>
+    </div>`;
 
 engineers.forEach((engineer) => {
   html += `
@@ -47,8 +49,7 @@ interns.forEach((intern) => {
   </div>
 </div>`;
 });
-return
-`
+return `
 <!DOCTYPE html>
 <html lang="en-US">
 
