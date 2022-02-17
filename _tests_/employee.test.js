@@ -18,7 +18,7 @@ describe('Employee', () => {
     it("should get id",()=>{
         const id = 1        
         const employee = new Employee("Kanye",1)
-        expect(typeof(employee.getId)).toEqual("number");
+        // expect(typeof(employee.getId)).toBe("number");
         expect(employee.getId()).toBe(id);
     })
 

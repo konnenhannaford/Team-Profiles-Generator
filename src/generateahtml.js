@@ -4,8 +4,8 @@ async function generateHTML(managers, engineers, interns) {
   const manager=managers[0];
   html += 
   `
-    <div class="card" >
-      <div class="card-header">
+    <div class="manager-card" >
+      <div class="manager-card-header">
         <h3> ${manager.name} </h3>
       </div>
       <div class="card-body">
